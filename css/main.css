@@ -1,0 +1,63 @@
+@import url("reset.css");
+body{
+    background: url(../images/bg0.jpg) no-repeat;
+    background-size: cover;
+}
+h1{
+    color: #f00;
+    font-size: 70px;
+}
+h2{
+    display: none;
+}
+h3{
+    display: none;
+}
+/* 1200px */
+@media (max-width:1200px){
+    body{
+        background: url("../images/bg1.jpg") no-repeat;
+    }
+    h1{
+    color: rgb(255, 238, 0);
+    font-size: 50px;
+}
+}
+/* 1000px */
+@media (max-width:1000px){
+    body{
+        background: url("../images/bg2.jpg") no-repeat;
+    }
+}
+/* 768px 테블릿 버전 */
+@media (max-width:768px){
+    body{
+        background: url("../images/bg3.jpg") no-repeat;
+    }
+    h2{
+    display: block;
+}
+h1{
+    color: rgb(0, 255, 13);
+    font-size: 24px;
+}
+}
+/* 480px */
+@media (max-width:480px){
+    body{
+        background: url("../images/1.jpg") no-repeat;
+    }
+    h3{
+        display: block;
+    }
+    h1{
+    color: rgb(25, 0, 255);
+    font-size: 12px;
+}
+}
+/* 390px */
+@media (max-width:390px){
+    body{
+        background: url("../images/2.jpg") no-repeat;
+    }
+}

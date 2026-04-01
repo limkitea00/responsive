@@ -1,0 +1,40 @@
+@import url("reset.css");
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+.card-list{
+    width: 90%;
+    margin: auto;
+    background-color: red;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card-list li{
+    width: calc((100% - 50px) / 6);
+    padding: 40PX 0;
+    background-color: aqua;
+}
+/* 반응형 */
+@media(max-width:768px){
+    .container{
+        width: 90%;
+    }
+    .card-list li{
+        width: calc((100% - 30px) / 4);
+    }
+}
+@media(max-width:480px){
+        .card-list li{
+        width: calc((100% - 30px) / 2);
+    }
+}
+@media(max-width:390px){
+        .card-list li{
+        width: 100%;
+    }
+}
