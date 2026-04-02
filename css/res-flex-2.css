@@ -1,0 +1,34 @@
+@import url("reset.css");
+.container{
+    width: 100%;
+    padding: 30px 0;
+    background-color: aliceblue;
+}
+.card{
+    width: 90%;
+    max-width: 700px;
+    min-width: 270px;
+    margin: auto;
+}
+.card li{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.card li >div{
+    width: 50%;
+    /* background-color: aquamarine; */
+}
+@media(max-width:480px){
+    .card li{
+        flex-direction: column;
+    }
+    .card li >div{
+        width: 100%;
+    }
+    .card-txt{
+        padding: 20px;
+    }
+}

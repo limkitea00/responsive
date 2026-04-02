@@ -1,0 +1,63 @@
+@import url("reset.css");
+.flex-box{
+    width: 90%;
+    margin: auto;
+    max-width: 800px;
+    min-width: 290px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 15px;
+}
+.flex-box li{
+    width: calc((100% - 6%) / 4);
+    /* margin-bottom: 2%; */
+    background-color: aliceblue;
+}
+.flex-box li a img{
+    width: 100%;
+    display: block;
+}
+.txt{
+    padding: 5%;
+}
+.txt-title{
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+@media(max-width:768px){
+    .flex-box li{
+        width: calc((100% - 4%) / 3);
+    }
+    .txt span{
+        color: blueviolet;
+    }
+}
+@media(max-width:480px){
+    .flex-box li{
+        width: calc((100% - 2%) / 2);
+    }
+    .txt span{
+        color: rgb(60, 201, 147);
+    }
+    .txt-title{
+        font-size: 20px;
+    }
+}
+@media(max-width:390px){
+    .flex-box{
+        width: 90%;
+    }
+    .flex-box li{
+        width: 100%;
+    }
+    .txt span{
+        color: rgb(226, 168, 43);
+    }
+     .txt-title{
+        color: blue;
+        font-size: 18px;
+    }
+}
